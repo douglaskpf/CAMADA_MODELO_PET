@@ -36,7 +36,7 @@ public class Servico implements Serializable {
     @GeneratedValue(generator = "seq_servico", strategy = GenerationType.SEQUENCE)
     private Integer id;
     
-     @NotNull(message = "A data deve ser informada")
+    @NotNull(message = "A data deve ser informada")
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data", nullable = false)
     private Calendar data;    
@@ -124,7 +124,7 @@ public class Servico implements Serializable {
             id.setServico(this);
             ag.setAgendamentoID(id);
           
-            Calendar dataAgendamento = (Calendar.getInstance());
+            Calendar dataAgendamento = (Calendar) this.data.clone();
            
             
             dataAgendamento.add(Calendar.WEEK_OF_MONTH,i);

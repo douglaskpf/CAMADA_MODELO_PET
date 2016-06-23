@@ -23,11 +23,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.NotBlank;
 
-/**
- *
- * @author Jorge Luis Boeira Bavaresco
- * @email jorge.bavaresco@passofundo.ifsul.edu.br
- */
+
 @Entity
 @Table(name = "venda")
 public class Venda implements Serializable {

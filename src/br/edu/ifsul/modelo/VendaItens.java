@@ -14,11 +14,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
-/**
- *
- * @author Jorge Luis Boeira Bavaresco
- * @email jorge.bavaresco@passofundo.ifsul.edu.br
- */
+
 @Entity
 @Table(name = "venda_itens")
 public class VendaItens implements Serializable {
